@@ -1,0 +1,13 @@
+print("Turf Field Calculator!")
+length_field = int(input("What is the length of your field (ft)?"))
+width_field = int(input("What is the width of your field (ft)"))
+cost = int(input("What is the cost per square foot of material?"))
+
+area = length_field * width_field
+print("your field has an area of", area, "ft")
+
+perimeter = (length_field * 2) + (width_field * 2)
+print("your field has a perimeter of", perimeter, "ft")
+
+cost_total = cost * area
+print("the cost of your field will be $", cost_total)

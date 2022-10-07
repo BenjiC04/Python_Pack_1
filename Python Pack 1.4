@@ -1,0 +1,45 @@
+#in order to calculate flight time
+#we speed, wind, destination, and distance to destination
+#a 747 can travel at 576mph but wind plays a factor
+print("ATC time management tool!")
+b747 = 576
+direction_x = input("is your plane departing east or west?")
+direction_y = input("is your plane departing north or south?")
+wind_direction = input("which direction is the wind approaching from?")
+wind_speed = int(input("What is the current windspeed? (mph)"))
+destination = input("What is the destination of this plane?")
+print("Wow", destination, ", that sounds like a fun trip!")
+distance = int(input("how far away is this destination? (mi)"))
+
+if (wind_direction == direction_x):
+    speed = b747 + wind_speed
+    time = distance / speed
+    print("your trip will take about", time, "hours")
+elif (wind_direction != direction_x):
+    speed = b747 - wind_speed
+    time = distance / speed
+    print("your trip will take about", time, "hours")
+
+if (wind_direction == direction_y):
+    speed = b747 + wind_speed
+    time = distance / speed
+    print("your trip will take about", time, "hours")
+elif (wind_speed!= direction_y):
+    speed = b747 - wind_speed
+    time = distance / speed
+    print("your trip will take about", time, "hours")
+
+'''if (wind_direction != direction_x):
+    speed = b747 - wind_speed
+    time = distance / speed
+    print("your trip will take about", time, "hours")'''
+
+'''if (wind_direction != direction_y):
+    speed = b747 - wind_speed
+    time = distance / speed
+    print("your trip will take about", time, "hours")'''
+
+
+
+
+    
